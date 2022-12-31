@@ -1,0 +1,9 @@
+docker -v
+docker container run hello-world
+docker run -it ubuntu bash
+
+// => on root@fb1a3ab62ee4
+
+mkdir /usr/src/app
+touch /usr/src/app/index.js
+exit

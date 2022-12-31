@@ -1,0 +1,5 @@
+// => on root@fb1a3ab62ee4
+apt install -y curl 
+curl -sL https://deb.nodesource.com/setup_16.x | bash
+apt install -y nodejs
+node /usr/src/app/index.js

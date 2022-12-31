@@ -1,0 +1,7 @@
+docker ps
+docker exec -it todo-backend-redis-1 /bin/bash
+// => on redis container execed
+redis-cli
+KEYS added_todos_counter
+GET added_todos_counter
+DEL added_todos_counter

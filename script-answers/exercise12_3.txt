@@ -1,0 +1,10 @@
+docker container ls -a
+docker start -i  distracted_fermat
+// => on root@fb1a3ab62ee4
+// => install nano
+apt update
+apt-get install nano
+// => start edit
+nano /usr/src/app/index.js
+// => on index.js, writing console.log('Hello World')
+// => ctrl + o and ctrl + x

@@ -1,0 +1,8 @@
+version: '3.8'            # Version 3.8 is quite new and should work
+
+services:
+  app:
+    image: todo-backend
+    build: .
+    ports:
+      - 3000:3000
