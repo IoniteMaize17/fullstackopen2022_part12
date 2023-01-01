@@ -8,10 +8,6 @@ RUN npm ci
 
 ENV DEBUG=playground:*
 
-RUN npm i -g -y pm2
+USER node
 
-RUN pm2 start bin/www
-
-RUN pm2 save
-
-RUN pm2 startup systemd
+CMD ["npm", "start"]

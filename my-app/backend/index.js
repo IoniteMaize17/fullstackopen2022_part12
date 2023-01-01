@@ -10,7 +10,7 @@ app.use(cors())
 
 app.get('/api/messages', (request, response, next) => {
   Message.find({}).then(messages => {
-    response.json(message)
+    response.json(messages)
   }).catch(error => next(error))
 })
 

@@ -16,7 +16,7 @@ COPY . .
 
 RUN npm install
 
-RUN npm run build
+RUN REACT_APP_BACKEND_URL=http://localhost:8080/api npm run build
 
 FROM nginx:1.20-alpine
 

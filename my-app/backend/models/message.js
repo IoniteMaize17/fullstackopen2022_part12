@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const url = process.env.MONGODB_URI
-
-mongoose.connect(url)
+const url = process.env.MONGO_URL
+console.log(url);
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('connected to MongoDB')
   })
@@ -14,12 +14,12 @@ mongoose.connect(url)
 const messageSchema = new mongoose.Schema({
   name: {
     type: String,
-    minLength: 3,
+    minLength: 1,
     required: true
   },
   content: {
     type: String,
-    minLength: 3,
+    minLength: 1,
     required: true
   },
 })
